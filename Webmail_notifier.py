@@ -11,6 +11,7 @@ def failedCase():
     logout_btn=browser.find_element_by_xpath('//*[@id="horde-logout"]/a')
     logout_btn.click()
     browser.quit()
+    exit()
 
 def passedCase():
     mailbox=browser.find_element_by_partial_link_text('Mail')
