@@ -5,3 +5,4 @@
 4. morse_encode_decode: A python3 program to:
                         1. Encode plain text (A-Z, a-z, 0-9, ' ', '.', ',', '?') and play using Python winsound library (**WINDOWS ONLY**)
                         2. Decode morse code to plain text (A-Z, a-z, 0-9, ' ', '.', ',', '?')
+5. results: A script to parse semester results of NIT Trichy. Takes rollnumber and password as inputs. Uses requests library.
