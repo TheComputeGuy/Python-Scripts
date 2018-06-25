@@ -14,6 +14,6 @@ headers={"Content-Type":"application/x-www-form-urlencoded"}
 session=requests.session()
 r=session.post(url, data=payload, headers=headers)
 
-output=r.text[6:len(r.text)-6]
+output=r.text[5:len(r.text)-6]
 
 print(output)
