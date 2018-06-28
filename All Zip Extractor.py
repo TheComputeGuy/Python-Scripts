@@ -8,7 +8,7 @@ for i in os.listdir(path):
         if os.name=='posix':
             pathList.append(path+'/'+i)        #then add filename+path to a new list
         else:
-           pathList.append(path+"\\"+i)
+            pathList.append(path+"\\"+i)
 
 for j in pathList:
     with ZipFile(j, 'r') as zip:                #Open file
@@ -16,4 +16,3 @@ for j in pathList:
         zip.close()                             #Close zip file
 
 print 'Done!'
-
