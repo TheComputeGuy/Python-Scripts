@@ -63,7 +63,6 @@ def _decode():
         if g is len(dstrin)-1:
             dlist.append(str.join(dmidstr))
     dstrout=[]
-    print(dlist)
     for k in dlist:
         dstrout.append(decoder[k])
     for i in dstrout:
@@ -75,4 +74,3 @@ if __name__=="__main__":
         _encode()
     elif choice==2:
         _decode()
-        
