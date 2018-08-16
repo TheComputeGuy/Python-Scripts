@@ -6,3 +6,5 @@
                         1. Encode plain text (A-Z, a-z, 0-9, ' ', '.', ',', '?') and play using Python winsound library (**WINDOWS ONLY**)
                         2. Decode morse code to plain text (A-Z, a-z, 0-9, ' ', '.', ',', '?')
 5. results: A script to parse semester results of NIT Trichy. Takes rollnumber and password as inputs. Uses requests library.
+6. way2sms: A script to automate sending SMS via way2sms. Made for Festember, NIT Trichy inductions. Reads CSV files to personalise message with name and slot for inductions. Built upon [this](http://home.iitk.ac.in/~saiwal/productivity/send-sms-way2sms-python/).
+7. Excel reconfigure: A script to automatically modify excel worksheets (especially form data) to make different rows for different parameters filled by the same individual. Made for separating individuals team-wise from a single google form response sheet for Festember, NIT Trichy. Uses openpyxl library.
