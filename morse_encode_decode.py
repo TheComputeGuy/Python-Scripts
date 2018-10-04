@@ -1,4 +1,5 @@
 import winsound as ws
+from sys import exit
 
 encoder={'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.', 'F':'..-.', 'G':'--.', 'H':'....', 'I':'..', 'J':'.---', 'K':'-.-', 'L':'.-..', 'M':'--',
       'N':'-.', 'O':'---', 'P':'.--.', 'Q':'--.-', 'R':'.-.', 'S':'...', 'T':'-', 'U':'..-', 'V':'...-', 'W':'.--', 'X':'-..-', 'Y':'-.--', 'Z':'--..',
@@ -44,6 +45,7 @@ def _encode():
                     _dah_beep()
             print(' ', end="")
             ws.Beep(37, 900)
+    print('\n')
 
 def _decode():
     print("Enter morse code:")
@@ -67,10 +69,21 @@ def _decode():
         dstrout.append(decoder[k])
     for i in dstrout:
         print(i, end="")
-    
-if __name__=="__main__":
+    print('\n')
+
+def _run():
     choice=int(input("Enter 1 to encode and play, 2 to decode: "))
     if choice==1:
         _encode()
     elif choice==2:
         _decode()
+    opt=input("Do you want to continue? Press Y or N: ")
+    print('\n')
+    if(opt=="Y" or opt=="y"):
+        _run()
+    else:
+        exit()
+        
+    
+if __name__=="__main__":
+    _run()
